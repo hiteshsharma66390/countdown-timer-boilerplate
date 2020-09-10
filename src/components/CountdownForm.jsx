@@ -9,7 +9,6 @@ class CountdownForm extends React.Component {
         e.preventDefault();
         var secondsStr = this.refs.seconds.value;
         if (secondsStr > 0) this.props.onSetCountdownTime(secondsStr);
-        else alert(`Invalid Input`);
     }
 
     render() {
